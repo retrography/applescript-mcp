@@ -15,5 +15,8 @@ dependencies = [
 [project.scripts]
 applescript_mcp.server = "applescript_mcp.server:entrypoint"
 
+[tool.hatch.build]
+sources = ["src"]
+
 [tool.hatch.build.targets.wheel]
-packages = ["src/applescript_mcp"]
+packages = ["applescript_mcp"]
